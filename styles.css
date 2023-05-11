@@ -16,3 +16,20 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
 }
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-links img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
