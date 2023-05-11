@@ -1,7 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a2d;
-    color: #FFC0CB;
+    font-family: 'Roboto', sans-serif;
+    background-color:#F5F5DC;
+    color : #800000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
 }
 
 #about-me, #projects, #contact-me {
