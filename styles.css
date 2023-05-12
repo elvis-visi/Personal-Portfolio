@@ -63,6 +63,7 @@ div > p:first-child {
 #navbar ul li a {
     color: var(--quaternary-color); 
     text-decoration: none; /* removes the default underline of links */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #navbar ul li a:hover {
@@ -148,6 +149,27 @@ footer {
     display: block; /* each link occupies its own line */
     margin-bottom: 10px; 
 }
+
+.content-item.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.tech-icon {
+    text-align: center;
+}
+
+.icon {
+    font-size: 2rem; 
+}
+
+.icon-name {
+    display: block;
+    margin-top: 10px;
+}
+
+
 
 @media (max-width: 576px) {
     html {
