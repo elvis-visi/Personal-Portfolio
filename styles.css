@@ -79,6 +79,24 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;  /* each div takes up an equal amount of space in the container */
 }
 
+.project-gif {
+    transition: transform 0.2s ease-in-out;
+}
+
+/*  translate to the right on hover, move  
+moving the element 30% of the element's own width to the right*/
+.col-1 .project-gif:hover {
+    transform: scale(2.3) translate(30%, 0);
+}
+
+.col-2 .project-gif:hover {
+    transform: scale(2.3);
+}
+
+.col-3 .project-gif:hover {
+    transform: scale(2.3) translate(-30%, 0);
+}
+
 
 @media screen and (max-width: 768px) {
     .grid {
