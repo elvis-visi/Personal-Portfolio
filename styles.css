@@ -131,7 +131,7 @@ moving the element 30% of the element's own width to the right*/
 }
 
 .col-2 .project-gif:hover {
-    transform: scale(2.3);
+    transform: scale(1.7) translate(0, 30%);
 }
 
 .col-3 .project-gif:hover {
