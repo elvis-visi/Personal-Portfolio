@@ -8,6 +8,35 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #acac1c; 
+    z-index: 100; /* to ensure navbar stays on top of other content */
+    padding: 10px 0; 
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap:20px
+}
+
+#navbar ul li a {
+    color: #800000; 
+    text-decoration: none; /* removes the default underline of links */
+}
+
+#navbar ul li a:hover {
+    color: #000000; /* color when link is hovered */
+}
+
+
+
 #about-me, #projects, #contact-me {
     margin: 20px;
 }
