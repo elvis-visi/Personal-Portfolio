@@ -192,7 +192,8 @@ footer {
     .col-1 .project-gif:hover,
     .col-2 .project-gif:hover,
     .col-3 .project-gif:hover,
-    .col-4 .project-gif:hover {
+    .col-4 .project-gif:hover,
+    .col-5 .project-gif:hover {
         transform: none;
     }
     .grid {
