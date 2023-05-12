@@ -11,6 +11,7 @@
 
 html {
     font-size: 18px; /* Default font size for larger screens */
+    scroll-behavior: smooth;
 }
 
 body {
