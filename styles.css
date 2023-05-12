@@ -1,19 +1,27 @@
+
+:root {
+    --primary-color: #f5f5dc;  /*light beige */
+    --secondary-color: #800000; /*dark red */
+    --tertiary-color: #acac1c; /*Gold */
+    --quaternary-color: #333333; /*dark grey*/
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color:#F5F5DC;
-    color : #800000;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
     margin:auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
 }
 
 
 #navbar {
     position: sticky;
     top: 0;
-    background-color: #acac1c; 
+    background-color: var(--tertiary-color);
     z-index: 100; /* to ensure navbar stays on top of other content */
     padding: 10px 0; 
 }
@@ -28,12 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar ul li a {
-    color: #800000; 
+    color: var(--quaternary-color); 
     text-decoration: none; /* removes the default underline of links */
 }
 
 #navbar ul li a:hover {
-    color: #000000; /* color when link is hovered */
+    color: var(--secondary-color);
 }
 
 
@@ -107,8 +115,8 @@ moving the element 30% of the element's own width to the right*/
 footer {
     width: 100%;
     padding: 20px 0;
-    background-color: #F5F5DC;
-    color: #800000;
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
 }
 
 #contact-me a {
