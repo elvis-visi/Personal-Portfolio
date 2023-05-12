@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 /*  translate to the right on hover, move  
 moving the element 30% of the element's own width to the right*/
 .col-1 .project-gif:hover {
-    transform: scale(2.3) translate(30%, 0);
+    transform: scale(1.7) translate(30%, 30%);
 }
 
 .col-2 .project-gif:hover {
@@ -94,7 +94,7 @@ moving the element 30% of the element's own width to the right*/
 }
 
 .col-3 .project-gif:hover {
-    transform: scale(2.3) translate(-30%, 0);
+    transform: scale(1.7) translate(-30%, 30%);
 }
 
 
@@ -108,4 +108,9 @@ moving the element 30% of the element's own width to the right*/
     .content-container {
         flex-direction: column;
     }
+    .col-1 .project-gif:hover,
+    .col-3 .project-gif:hover {
+        transform: none;
+    }
 }
+
