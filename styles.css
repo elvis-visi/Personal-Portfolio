@@ -138,6 +138,10 @@ moving the element 30% of the element's own width to the right*/
     transform: scale(1.7) translate(-30%, 30%);
 }
 
+.col-4 .project-gif:hover {
+    transform: scale(1.7) translate(30%, -30%);
+}
+
 footer {
     width: 100%;
     padding: 20px 0;
@@ -183,7 +187,9 @@ footer {
         flex-direction: column;
     }
     .col-1 .project-gif:hover,
-    .col-3 .project-gif:hover {
+    .col-2 .project-gif:hover,
+    .col-3 .project-gif:hover,
+    .col-4 .project-gif:hover {
         transform: none;
     }
     .grid {
