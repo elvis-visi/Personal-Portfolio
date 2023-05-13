@@ -15,27 +15,46 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-const toggleButton = document.getElementById('theme-toggle');
 
-const currentTheme = localStorage.getItem('theme'); //initially null
-console.log(currentTheme);  //  current theme stored in local storage
+
+
+const lightThemeIcon = document.getElementById('light-theme-icon');
+const darkThemeIcon = document.getElementById('dark-theme-icon');
+
+let currentTheme = localStorage.getItem('theme');
+console.log("Initial currentTheme: ", currentTheme);  // current theme when the page loads
+
+if (!currentTheme) {
+  localStorage.setItem('theme', 'light');
+  currentTheme = 'light';
+  console.log("No theme set, so setting currentTheme to: ", currentTheme); 
+}
 
 if (currentTheme === 'dark') {
   document.body.classList.add('dark');
+  lightThemeIcon.style.display = "none";
+  darkThemeIcon.style.display = "block";
+  console.log("Setting to dark theme."); 
+} else {
+  darkThemeIcon.style.display = "none";
+  lightThemeIcon.style.display = "block";
+  console.log("Setting to light theme."); 
 }
 
-toggleButton.addEventListener('click', function () {
-  //If the <body> currently has the dark class, it's removed; if it doesn't
-  // have the class, it's added.
-    document.body.classList.toggle('dark');
+lightThemeIcon.addEventListener('click', function () {
+  document.body.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
+  lightThemeIcon.style.display = "none";
+  darkThemeIcon.style.display = "block";
+  console.log("Clicked on light theme icon. Changing to dark theme."); 
+});
 
-  let theme = 'light';
-  if (document.body.classList.contains('dark')) {
-    theme = 'dark';
-  }
-  localStorage.setItem('theme', theme);  //store current theme in localStorage
-
-  console.log(document.body.classList);  //  log the classes on the body, including 'dark' if it's been added
+darkThemeIcon.addEventListener('click', function () {
+  document.body.classList.remove('dark');
+  localStorage.setItem('theme', 'light');
+  darkThemeIcon.style.display = "none";
+  lightThemeIcon.style.display = "block";
+  console.log("Clicked on dark theme icon. Changing to light theme."); 
 });
 
 

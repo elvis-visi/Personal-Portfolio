@@ -35,6 +35,10 @@ body.dark .content-item {
     box-shadow: 0 4px 8px 0 rgba(201, 214, 223, 0.2); 
 }
 
+#light-theme-icon, #dark-theme-icon {
+    margin-top: 5px; 
+}
+
 
 h1 {
     font-family: var(--secondary-font);
@@ -234,7 +238,6 @@ footer a {
 }
 
 
-
 @media (max-width: 576px) {
     html {
         font-size: 10px; 
@@ -259,6 +262,10 @@ footer a {
 
     html {
         font-size: 12px; 
+    }
+
+    #light-theme-icon, #dark-theme-icon {
+        margin-top: 3px; 
     }
 }
 
