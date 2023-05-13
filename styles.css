@@ -65,6 +65,7 @@ div > p:first-child {
     background-color: var(--tertiary-color);
     z-index: 100; /* to ensure navbar stays on top of other content */
     padding: 10px 0; 
+    font-size: 1.4rem;
 }
 
 #navbar ul {
@@ -206,6 +207,7 @@ footer a {
 
 #contact-me a {
     margin-bottom: 10px; 
+    font-size: 1.2rem;
 }
 
 .content-item.skills {
