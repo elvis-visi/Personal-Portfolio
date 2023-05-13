@@ -23,6 +23,19 @@ body {
     margin:auto;
 }
 
+body.dark {
+    --primary-color: #1E2029;  /* Dark Blue-Black */
+    --secondary-color: #C9D6DF; /* Light Blue-Grey */
+    --tertiary-color: #52616B; /* Medium-Dark Blue */
+    --quaternary-color: #C9D6DF; /* Light Blue-Grey */
+}
+
+/* about me divs */
+body.dark .content-item {
+    box-shadow: 0 4px 8px 0 rgba(201, 214, 223, 0.2); 
+}
+
+
 h1 {
     font-family: var(--secondary-font);
     color: var(--secondary-color);
@@ -78,6 +91,10 @@ div > p:first-child {
     padding: 40px;
 }
 
+#about-me{
+    padding-top: 10px;
+}
+
 
 .grid {
     display: grid;
@@ -86,6 +103,7 @@ div > p:first-child {
   
 }
 
+/* targets the projects  */
 .grid-item {
     border: 1px solid #ccc;
     padding: 5px;
@@ -212,8 +230,9 @@ footer a {
 }
 
 .icon-spacing {
-    margin-right: 10px;
+    margin-right: 15px;
 }
+
 
 
 @media (max-width: 576px) {
