@@ -69,11 +69,15 @@ div > p:first-child {
     color: var(--secondary-color);
 }
 
+#about-me div {
+    padding: 1px;
+}
 
-#about-me, #projects, #contact-me {
+#about-me, #projects {
     margin: 10px;
     padding: 40px;
 }
+
 
 .grid {
     display: grid;
@@ -145,15 +149,40 @@ moving the element 30% of the element's own width to the right*/
     transform: scale(1.5) translate(0%, -30%);
 }
 
+.content-item p {
+    font-size: 1.3rem;    
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
 footer {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 10px;
     background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    line-height: 1.2;
+}
+
+footer a {
     color: var(--quaternary-color);
 }
 
+.contact-info {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* This property sets the space between items */
+}
+
+
 #contact-me a {
-    display: block; /* each link occupies its own line */
     margin-bottom: 10px; 
 }
 
@@ -161,6 +190,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px; 
+  
 }
 
 .tech-icon {
