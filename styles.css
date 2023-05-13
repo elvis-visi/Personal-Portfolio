@@ -39,6 +39,16 @@ body.dark .content-item {
     margin-top: 5px; 
 }
 
+.project-title a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the link has the same color as the rest of the text */
+  }
+  
+  .project-title a:visited {
+    color: inherit; /* Removes the visited link color */
+  }
+  
+
 
 h1 {
     font-family: var(--secondary-font);
