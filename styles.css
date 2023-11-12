@@ -97,7 +97,7 @@ div > p:first-child {
 }
 
 #about-me div {
-  padding: 1px;
+  padding-top: 1rem;
 }
 
 #about-me,
@@ -131,7 +131,7 @@ div > p:first-child {
 
 .grid-item img {
   width: 100%;
-  height: auto;
+  height: 14rem;
 }
 
 .project-info {
@@ -155,6 +155,12 @@ div > p:first-child {
 
 .content-item {
   flex: 1; /* each div takes up an equal amount of space in the container */
+}
+
+.content-item p {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .project-gif {
@@ -225,6 +231,7 @@ footer a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  border-radius: 2rem;
 }
 
 .tech-icon {
@@ -242,6 +249,7 @@ footer a {
 
 .content-item {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
 }
 
 .icon-spacing {
