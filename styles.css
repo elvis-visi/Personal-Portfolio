@@ -4,7 +4,7 @@
   --tertiary-color: #d8d8af; /*Gold */
   --quaternary-color: #333333; /*dark grey*/
 
-  --primary-font: "Roboto", sans-serif;
+  --primary-font: 'Open Sans', sans-serif;
   --secondary-font: "Playfair Display", serif;
 }
 
@@ -22,6 +22,15 @@ body {
   margin: auto;
 }
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 body.dark {
   --primary-color: #1e2029; /* Dark Blue-Black */
   --secondary-color: #c9d6df; /* Light Blue-Grey */
@@ -31,7 +40,7 @@ body.dark {
 
 /* about me divs */
 body.dark .content-item {
-  box-shadow: 0 4px 8px 0 rgba(201, 214, 223, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(200, 200, 255, 0.5); /* Larger blur and spread */
 }
 
 #light-theme-icon,
@@ -75,6 +84,7 @@ div > p:first-child {
   z-index: 100; /* to ensure navbar stays on top of other content */
   padding: 10px 0;
   font-size: 1.4rem;
+  width: 100%;
 }
 
 #navbar ul {
@@ -198,7 +208,7 @@ moving the element 30% of the element's own width to the right*/
 }
 
 footer {
-  width: 100%;
+
   padding: 10px 10px;
   background-color: var(--tertiary-color);
   color: var(--quaternary-color);
